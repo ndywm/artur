@@ -2,7 +2,9 @@
   <head>
     <script>
       window.onload=function(){
+        var hartur=document.getElementById('artur')
         var hjanek=document.getElementById('janek')
+        var hlot=document.getElementById('lot')
         var hmonika=document.getElementById('monika')
         var hnamietnosc=document.getElementById('namietnosc')
         var holek=document.getElementById('olek')
@@ -13,7 +15,9 @@
         var hucieczka=document.getElementById('ucieczka')
         var hzawsze=document.getElementById('zawsze')
         var hfragment=document.getElementById('fragment')
+        hartur.addEventListener('click',function(){hfragment.innerHTML="Bardzo ciekawy człowiek. Zachowywał się trochę, jakby skądś mnie już znał, a może po prostu jak idiota."})
         hjanek.addEventListener('click',function(){hfragment.innerHTML="Słoneczna aura przemienia się w księżycową, tylko po to, żebym w dalszej kolejności poczuła się wciągana przez czarną dziurę. Wiszę nad horyzontem zdarzeń. Nie wiem, czy czas tutaj może istnieć. Po drugiej stronie horyzontu zdarzeń jest… pustka? Mam jednak wrażenie, że coś się z niej wyłania."})
+        hlot.addEventListener('click',function(){hfragment.innerHTML="Czuję siłę, by wstać, a może nawet wzbić się w przestworza, czego nigdy wcześniej nie robiłam."})
         hmonika.addEventListener('click',function(){hfragment.innerHTML="Leżę. Dlaczego leżę? Bo upadłam. Dlaczego upadłam? Bo mnie powalił. Dlaczego mnie powalił? Nie chce mi tego zdradzić. "})
         hnamietnosc.addEventListener('click',function(){hfragment.innerHTML="A jak czujesz się teraz? Jaki smak ma ta niepowtarzalna chwila?"})
         holek.addEventListener('click',function(){hfragment.innerHTML="Może on nie bawi się lalkami, tylko bawi się z lalkami, bo... jest lalką? Taką plastikową, ubraną w cudowny, miniaturowy kardigan, lecz pustą w środku. "})
@@ -45,6 +49,8 @@
     <img src="zawsze.png" width="256" height="256" id='zawsze'>
     <img src="samoswiadomosc.png" width="256" height="256" id='samoswiadomosc'>
     <img src="sen.png" width="256" height="256" id='sen'>
+    <img src="artur.png" width="256" height="256" id='artur'>
+    <img src="lot.png" width="256" height="256" id='lot'>
     <br>
     <p id="fragment"></p>
   </body>
