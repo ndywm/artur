@@ -2,7 +2,6 @@
   <head>
     <script>
       window.onload=function(){
-        document.getElementById('rzecz').addEventListener('click',function(){document.getElementById("cz1").style.display="none"})
         var hartur=document.getElementById('artur')
         var hcodziennosc=document.getElementById('codziennosc')
         var hjanek=document.getElementById('janek')
@@ -38,6 +37,12 @@
 
 
       }
+      function zamien(pageid){
+        document.getElementById("cz1").style.display="none"
+        document.getElementById("cz2").style.display="none"
+        document.getElementById("cz3").style.display="none"
+        document.getElementById(pageid).style.display="block"
+      }
 
     </script>
     <style>
@@ -48,7 +53,7 @@
   <body>
     <span style="font-size:128px;">ARTUR</span><br>
     O tożsamości. I o tożsamość.<br>
-    <p id="rzecz">DUPA</p>
+    <img src="1w.png" id="1page"><img src="2nw.png" id="2page"><img src="3nw.png" id="3page">
     <div id='cz1'>
     <img src="monika.png" width="256" height="256" id='monika'>
     <img src="olek.png" width="256" height="256" id='olek'>
