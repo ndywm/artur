@@ -4,6 +4,9 @@
       window.onload=function(){
         document.getElementById('cz2').style.display="none"
         document.getElementById('cz3').style.display="none"
+        document.getElementById("1page").addEventListener('click',zamien(1))
+        document.getElementById("2page").addEventListener('click',zamien(2))
+        document.getElementById("3page").addEventListener('click',zamien(3))
         var hartur=document.getElementById('artur')
         var hcodziennosc=document.getElementById('codziennosc')
         var hjanek=document.getElementById('janek')
@@ -35,9 +38,7 @@
         hstacja.addEventListener('click',function(){hfragment.innerHTML="Za każdym razem, gdy przejeżdża tamtędy pociąg czuję, że coś z tego pociągu wysiada, a coś do niego wsiada. Jadący pociąg zawsze wydaje się być izolowanym fragmentem wszechświata, jednak na ??? pociąg wydaje się być… bliski."})
         hucieczka.addEventListener('click',function(){hfragment.innerHTML="To już nie ma znaczenia. Muszę uciec. Ale nie zamierzam uciekać daleko, ani na długo, wrócę jeszcze dzisiaj. "})
         hzawsze.addEventListener('click',function(){hfragment.innerHTML="No to słuchaj, wyobraź sobie, że ludzie żyją wiecznie. Myślisz, że wtedy wciąż mówiliby sobie że na zawsze?"})
-        document.getElementById("1page").addEventListener('click',zamien(1))
-        document.getElementById("2page").addEventListener('click',zamien(2))
-        document.getElementById("3page").addEventListener('click',zamien(3))
+
         
 
 
