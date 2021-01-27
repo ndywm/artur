@@ -18,7 +18,7 @@
         var hucieczka=document.getElementById('ucieczka')
         var hzawsze=document.getElementById('zawsze')
         var hfragment=document.getElementById('fragment')
-        hartur.addEventListener('click',function(){document.getElementsByClassName('cz1').style.visibility="hidden"})
+        hartur.addEventListener('click',function(){hfragment.innerHTML="Bardzo ciekawy człowiek. Zachowywał się trochę, jakby skądś mnie już znał, a może po prostu jak idiota."})
         hcodziennosc.addEventListener('click',function(){hfragment.innerHTML="W tym pełnym powtarzalności, perfekcji i halogenowego światła świecie chodzi tylko i wyłącznie o liczby. Trzy, siedemnaście, poniedziałek, trzysta osiemdziesiąt pięć przecinek dwadzieścia siedem..."})
         hjanek.addEventListener('click',function(){hfragment.innerHTML="Słoneczna aura przemienia się w księżycową, tylko po to, żebym w dalszej kolejności poczuła się wciągana przez czarną dziurę. Wiszę nad horyzontem zdarzeń. Nie wiem, czy czas tutaj może istnieć. Po drugiej stronie horyzontu zdarzeń jest… pustka? Mam jednak wrażenie, że coś się z niej wyłania."})
         hlot.addEventListener('click',function(){hfragment.innerHTML="Czuję siłę, by wstać, a może nawet wzbić się w przestworza, czego nigdy wcześniej nie robiłam."})
@@ -33,7 +33,7 @@
         hstacja.addEventListener('click',function(){hfragment.innerHTML="Za każdym razem, gdy przejeżdża tamtędy pociąg czuję, że coś z tego pociągu wysiada, a coś do niego wsiada. Jadący pociąg zawsze wydaje się być izolowanym fragmentem wszechświata, jednak na ??? pociąg wydaje się być… bliski."})
         hucieczka.addEventListener('click',function(){hfragment.innerHTML="To już nie ma znaczenia. Muszę uciec. Ale nie zamierzam uciekać daleko, ani na długo, wrócę jeszcze dzisiaj. "})
         hzawsze.addEventListener('click',function(){hfragment.innerHTML="No to słuchaj, wyobraź sobie, że ludzie żyją wiecznie. Myślisz, że wtedy wciąż mówiliby sobie że na zawsze?"})
-
+        document.getElementById('gowno').addEventListener('click',function(){document.getElementById('cz1').style.display="none"})
 
 
       }
@@ -47,23 +47,26 @@
   <body>
     <span style="font-size:128px;">ARTUR</span><br>
     O tożsamości. I o tożsamość.<br>
-    <img src="monika.png" width="256" height="256" id='monika' class='cz1'>
-    <img src="olek.png" width="256" height="256" id='olek' class='cz1'>
-    <img src="ucieczka.png" width="256" height="256" id='ucieczka' class='cz1'>
-    <img src="stacja.png" width="256" height="256" id='stacja' class='cz1'>
-    <img src="namietnosc.png" width="256" height="256" id='namietnosc' class='cz1'>
-    <img src="janek.png" width="256" height="256" id='janek' class='cz1'>
-    <img src="rozmycie.png" width="256" height="256" id='rozmycie' class='cz1'>
-    <img src="zawsze.png" width="256" height="256" id='zawsze' class='cz1'>
-    <img src="samoswiadomosc.png" width="256" height="256" id='samoswiadomosc' class='cz1'>
-    <img src="sen.png" width="256" height="256" id='sen' class='cz1'>
-    <img src="artur.png" width="256" height="256" id='artur' class='cz1'>
-    <img src="lot.png" width="256" height="256" id='lot' class='cz1'>
-    <img src="roznorodnosc.png" width="256" height="256" id='roznorodnosc' class='cz1'>
-    <img src="codziennosc.png" width="256" height="256" id='codziennosc' class='cz1'>
-    <img src="nienawisc.png" width="256" height="256" id='nienawisc' class='cz1'>
+    <p id='gowno'>DUPA</p>
+    <div id='cz1'>
+    <img src="monika.png" width="256" height="256" id='monika'>
+    <img src="olek.png" width="256" height="256" id='olek'>
+    <img src="ucieczka.png" width="256" height="256" id='ucieczka'>
+    <img src="stacja.png" width="256" height="256" id='stacja'>
+    <img src="namietnosc.png" width="256" height="256" id='namietnosc'
+    <img src="janek.png" width="256" height="256" id='janek'>
+    <img src="rozmycie.png" width="256" height="256" id='rozmycie'>
+    <img src="zawsze.png" width="256" height="256" id='zawsze'>
+    <img src="samoswiadomosc.png" width="256" height="256" id='samoswiadomosc'>
+    <img src="sen.png" width="256" height="256" id='sen'>
+    <img src="artur.png" width="256" height="256" id='artur'>
+    <img src="lot.png" width="256" height="256" id='lot'>
+    <img src="roznorodnosc.png" width="256" height="256" id='roznorodnosc'>
+    <img src="codziennosc.png" width="256" height="256" id='codziennosc'>
+    <img src="nienawisc.png" width="256" height="256" id='nienawisc'>
     <br>
-    <p id="fragment" class='cz1'></p><br><br>
+    <p id="fragment"></p><br><br>
+    </div>
     <span style="font-size:128px;">czerwiec lub lipiec 2021</span><br>
     Stej tjund. Jeśli chcesz uzyskać dostęp do wersji alfa, skontaktuj się z wiadomo kim.<br>
     <a style="color:#dd10dd" href="https://ndywm.github.io/bagno/">powrót do Bagna</a>
